@@ -1,0 +1,114 @@
+{
+    "background": "minzodi",
+    "background_level": "benchmark",
+    "calculation": {
+        "effects": {
+            "saturation": null
+        },
+        "noise": {
+            "crs": null,
+            "ffnoise": null
+        }
+    },
+    "configuration": {
+        "detector": {
+            "nexp": 1,
+            "ngroup": 10,
+            "nint": 1,
+            "readout_pattern": "rapid",
+            "subarray": "full"
+        },
+        "instrument": {
+            "aperture": "sw",
+            "disperser": null,
+            "filter": "f070w",
+            "instrument": "nircam",
+            "mode": "sw_imaging"
+        }
+    },
+    "scene": [
+        {
+            "position": {
+                "orientation": 0.0,
+                "x_offset": 0.0,
+                "y_offset": 0.0
+            },
+            "shape": {
+                "geometry": "point"
+            },
+            "spectrum": {
+                "extinction": {
+                    "bandpass": "j",
+                    "law": "mw_rv_31",
+                    "unit": "mag",
+                    "value": 0.0
+                },
+                "lines": [],
+                "name": "generic source",
+                "normalization": {
+                    "norm_flux": 0.001,
+                    "norm_fluxunit": "mjy",
+                    "norm_wave": 2.0,
+                    "norm_waveunit": "microns",
+                    "type": "at_lambda"
+                },
+                "redshift": 0.0,
+                "sed": {
+                    "sed_type": "flat",
+                    "unit": "fnu",
+                    "z": 0.0
+                }
+            }
+        },
+        {
+            "position": {
+                "orientation": 0.0,
+                "x_offset": 0.2,
+                "y_offset": 0.3
+            },
+            "shape": {
+                "geometry": "point"
+            },
+            "spectrum": {
+                "extinction": {
+                    "bandpass": "j",
+                    "law": "mw_rv_31",
+                    "unit": "mag",
+                    "value": 0.0
+                },
+                "lines": [],
+                "name": "generic source 2",
+                "normalization": {
+                    "norm_flux": 0.001,
+                    "norm_fluxunit": "mjy",
+                    "norm_wave": 2.0,
+                    "norm_waveunit": "microns",
+                    "type": "at_lambda"
+                },
+                "redshift": 0.0,
+                "sed": {
+                    "sed_type": "flat",
+                    "unit": "fnu",
+                    "z": 0.0
+                }
+            }
+        }
+    ],
+    "strategy": {
+        "aperture_size": 0.1,
+        "background_subtraction": true,
+        "display_string": "Imaging Aperture Photometry",
+        "method": "imagingapphot",
+        "sky_annulus": [
+            0.22,
+            0.4
+        ],
+        "target_source": "1",
+        "target_type": "coords",
+        "target_xy": [
+            0.0,
+            0.0
+        ],
+        "units": "arcsec"
+    }
+}
